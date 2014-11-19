@@ -46,7 +46,7 @@ public class SplashScreen extends Activity
 						}
 					}
 				} catch (InterruptedException e) {
-					// do nothing
+
 				} finally {
 					try {
 
