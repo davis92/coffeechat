@@ -9,14 +9,14 @@ import com.android.slidingmenu.MainActivity;
 import com.example.coffeechat.utility.SessionManager;
 import com.example.coffeechat.R;
 
-public class SplashScreen extends Activity 
+public class SplashActivity extends Activity 
 
 {
 	public static boolean mDebugLog = true;
 	public static String mDebugTag = "LoginUsingActivityActivity";
 	public boolean _active = true;
 
-	public int _splashTime = 800; //how long it takes for screen to stay in loading mode.
+	public int _splashTime = 500; //how long it takes for screen to stay in loading mode.
 
 	void logDebug(String msg) 
 	
@@ -26,7 +26,7 @@ public class SplashScreen extends Activity
 		}
 	} 
 
-	@Override //this part to the end is non-group generated code. We know what it does but needed help putting it into code.
+	@Override 
 	
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -47,7 +47,7 @@ public class SplashScreen extends Activity
 					}
 				} catch (InterruptedException e) {
 
-				} finally {
+				} finally { //this part to the end is non-group generated code. We know what it does but needed help putting it into code.
 					try {
 
 						SessionManager mSessionManager = new SessionManager(
